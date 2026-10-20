@@ -1,0 +1,172 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Cocoa Temple for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_animGrass_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Animated Grass Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_armchair_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Armchair Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecFountain_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Dragon Head Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHouse_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec House Object (A) for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHouse_b
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec House Object (B) for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHut_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Hut Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2014 Anon
+ Copyright 2014 Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 4.0
+Comment: Fringe and stuff added by samuncle
+
+
+# library/stklib_aztekGirlCheering_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Girl Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files:
+ stktex_aztekGirlBody_a.png
+ stktex_aztekGirlFace_a.png
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+Files: *.spm *.xml
+Copyright:
+ Copyright 2014 Dhanraj "drex" Acharya <dhanrajacharya44@gmail.com | drex4.deviantart.com>
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztekTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztekVase_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: node.xml
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+Files: stklib_aztekVace_a_main.b3d
+Copyright: Copyright 2014 Anon
+License: CC-BY-SA 4.0 CC-BY-SA 3.0 Unported
+Comment: From https://forum.freegamedev.net/viewtopic.php?f=90&t=5726
+
+
+# library/stklib_bambooTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bamboo Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_monkeyCheering_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Animated Monkey model for SuperTuxKart
+Upstream-Contact: Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2014, 2015 Jean-Manuel "samuncle" Clémençon <sam.un@protonmail.com>
+ Copyright 2017 Benau
+ Copyright 2019 theTomasPat
+License: CC-BY-SA 4.0
+Comment: Original model by samuncle. Benau and theTomasPat added new animations.
+
+
+# library/stklib_ReedBoat_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0

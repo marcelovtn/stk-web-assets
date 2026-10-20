@@ -1,0 +1,87 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Temple for SuperTuxKart
+Upstream-Contact: Anon
+Source: https://supertuxkart.net
+License: Creative Commons Attribution 4.0 International and Creative Commons Attribution 3.0 Unported.
+
+Files: *
+Copyright: Copyright 2015 Anon
+License: Creative Commons Attribution 4.0 International and Creative Commons Attribution 3.0 Unported.
+Comment:
+ skybox_bottom.png and skybox_side.png are derived from content found in the Supertuxkart
+ repositories, based on work by Samuncle.
+
+
+# library/stklib_animGrass_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Animated Grass Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHouse_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec House Object (A) for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHouse_b
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec House Object (B) for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHut_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Hut Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2014 Anon
+ Copyright 2014 Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 4.0
+Comment: Fringe and stuff added by samuncle
+
+
+# library/stklib_aztekTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_bambooTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bamboo Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0

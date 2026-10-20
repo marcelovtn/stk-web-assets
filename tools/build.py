@@ -19,9 +19,16 @@ import pack  # noqa: E402
 import spm  # noqa: E402
 
 SRC, REF, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
-TRACKS = ['snowtuxpeak', 'sandtrack', 'hacienda']
+RACE_TRACKS = ['snowtuxpeak', 'hacienda', 'sandtrack', 'lighthouse', 'zengarden', 'scotland', 'minigolf',
+               'olivermath', 'fortmagma', 'snowmountain', 'volcano_island', 'xr591', 'mines', 'stk_enterprise',
+               'cornfield_crossing', 'candela_city', 'cocoa_temple', 'abyss', 'gran_paradiso_island',
+               'ravenbridge_mansion', 'black_forest']
+ARENAS = ['battleisland', 'cave', 'stadium', 'temple', 'arena_candela_city', 'lasdunasarena', 'pumpkin_park',
+          'alien_signal', 'ancient_colosseum_labyrinth']
+SOCCER = ['soccer_field', 'icy_soccer_field', 'lasdunassoccer', 'xr_soccer', 'hole_drop', 'oasis']
+TRACKS = RACE_TRACKS + ARENAS + SOCCER
 KARTS = ['tux', 'gnu', 'nolok', 'suzanne', 'kiki', 'adiumy', 'xue', 'pidgin', 'puffy', 'wilber',
-         'emule', 'gavroche', 'amanda', 'hexley']
+         'emule', 'gavroche', 'amanda', 'hexley', 'konqi', 'beastie', 'sara_the_racer', 'sara_the_wizard']
 ITEMS = {
     'gift': 'gift-box.spm', 'banana': 'banana.spm', 'nitro_small': 'nitrotank-small.spm',
     'nitro_big': 'nitrotank-big.spm', 'bowling': 'bowling.spm', 'cake': 'cake.spm',
@@ -29,11 +36,12 @@ ITEMS = {
     'parachute': 'parachute.spm', 'rubber_ball': 'rubber_ball.spm', 'shield': 'bubblegum_shield.spm',
 }
 MUSIC = {'snowmountain.music', 'egypt.music', 'hacienda.music', 'race_summary.music', 'main_theme.music'}
-SFX = ['start_race', 'pre_start_race', 'engine_small', 'engine_large', 'skid', 'nitro', 'crash',
+SFX = ['goal_scored', 'anvil', 'appear', 'start_race', 'pre_start_race', 'engine_small', 'engine_large', 'skid', 'nitro', 'crash',
        'crash2', 'grab_collectable', 'shoot', 'bowling_shoot', 'bowling_roll', 'explosion', 'goo',
        'plunger', 'swatter', 'wee', 'race_finish', 'race_finish_victory', 'last_lap_fanfare', 'boing',
        'jump', 'ugh', 'horn', 'ball_bounce', 'bzzt', 'strike', 'energy_bar_full', 'swap', 'parachute']
-ICONS = ['bowling-icon', 'bubblegum-icon', 'cake-icon', 'plunger-icon', 'swatter-icon',
+ICONS = ['heart', 'soccer_ball_normal', 'soccer_ball_red', 'soccer_ball_blue', 'mode_normal', 'mode_tt',
+         'mode_ftl', 'mode_3strikes', 'mode_soccer', 'cup_gold', 'cup_silver', 'cup_bronze', 'bowling-icon', 'bubblegum-icon', 'cake-icon', 'plunger-icon', 'swatter-icon',
          'zipper_collect', 'rubber_ball-icon', 'parachute-icon', 'anchor-icon', 'swap-icon',
          'nitro', 'gift', 'lap_flag', 'gauge_empty', 'gauge_full', 'gauge_full_bright', 'banana',
          'logo', 'robot', 'speed', 'speedback', 'speedfore', 'red_flag', 'crown']
@@ -147,7 +155,7 @@ def read_materials(path, into):
         if z is not None:
             rec['zipper'] = {k: float(z.get(a)) for k, a in (
                 ('duration', 'duration'), ('gain', 'speed-gain'), ('maxInc', 'max-speed-increase'),
-                ('fade', 'fade-out-time')) if z.get(a)}
+                ('fade', 'fade-out-time'), ('min', 'min-speed')) if z.get(a)}
         if shader == 'splatting':
             rec['splat'] = [e.get('uv-two-tex')] + [e.get('tex-layer-%d' % i) for i in range(2, 6)]
         into[name] = rec
@@ -286,6 +294,14 @@ def build_track(tid):
     batcher = Batcher()
     coll = Collision()
     stats = {'objects': 0}
+    ball = {}
+
+    cur = {'b': batcher, 'c': coll}
+    protos = {}
+    scene_root = ET.parse(os.path.join(tdir, 'scene.xml')).getroot()
+    lib_count = {}
+    for e in scene_root.iter('library'):
+        lib_count[e.get('name')] = lib_count.get(e.get('name'), 0) + 1
 
     def place(model_path, matrix, interaction):
         if not os.path.exists(model_path):
@@ -293,17 +309,18 @@ def build_track(tid):
         info = read_spm(model_path)
         render = interaction != 'physics-only'
         collide = interaction not in ('ghost', 'none')
-        batcher.add_mesh(info, matrix, None, collide=collide, render=render, coll=coll)
+        cur['b'].add_mesh(info, matrix, None, collide=collide, render=render, coll=cur['c'])
         stats['objects'] += 1
 
-    def walk(path, base_dir, parent, lods):
+    def walk(path, base_dir, parent, lods, low=False):
         root = ET.parse(path).getroot()
         local_lods = dict(lods)
         for g in root.iter('group'):
             best = None
             for so in g.findall('static-object'):
                 d = float(so.get('lod_distance', '9999'))
-                if best is None or d < best[0]:
+                # many copies of an object: its far (light) model; a few: its near one
+                if best is None or (d > best[0] if low else d < best[0]):
                     best = (d, so.get('model'))
             if best:
                 local_lods[g.get('name')] = os.path.join(base_dir, best[1])
@@ -323,20 +340,39 @@ def build_track(tid):
                     if c.get('type') in ('sfx-emitter', 'particle-emitter', 'billboard', 'cutscene_camera',
                                          'action-trigger'):
                         continue
+                    if c.get('soccer_ball') == 'true':
+                        ball['model'] = os.path.join(base_dir, c.get('model'))
+                        ball['pos'] = list(game(xform(m, (0.0, 0.0, 0.0))))
+                        ball['restitution'] = float(c.get('restitution', 0.6))
+                        continue
                     if c.get('lod_instance') == 'true':
                         mp = local_lods.get(c.get('lod_group'))
                         if mp:
                             place(mp, m, c.get('interaction', 'static'))
                     elif c.get('model'):
-                        place(os.path.join(base_dir, c.get('model')), m, c.get('interaction', 'static'))
+                        # movable props (crates) get pushed around in STK; here they never block
+                        inter = 'ghost' if c.get('type') == 'movable' else c.get('interaction', 'static')
+                        place(os.path.join(base_dir, c.get('model')), m, inter)
                     visit(c, m)
                 elif tag == 'library':
-                    ld = os.path.join(SRC, 'library', c.get('name'))
+                    name = c.get('name')
+                    ld = os.path.join(SRC, 'library', name)
                     if ld not in lib_dirs:
                         lib_dirs.append(ld)
                     node = os.path.join(ld, 'node.xml')
-                    if os.path.exists(node):
-                        walk(node, ld, m, local_lods)
+                    if not os.path.exists(node):
+                        continue
+                    if cur['b'] is batcher and lib_count.get(name, 0) >= 3:
+                        if name not in protos:
+                            pb, pc = Batcher(), Collision()
+                            saved = dict(cur)
+                            cur['b'], cur['c'] = pb, pc
+                            walk(node, ld, mat_identity(), {}, low=lib_count[name] >= 20)
+                            cur.update(saved)
+                            protos[name] = {'b': pb, 'c': pc, 'inst': []}
+                        protos[name]['inst'].append(m)
+                    else:
+                        walk(node, ld, m, local_lods, low)
         visit(root, parent)
 
     walk(os.path.join(tdir, 'scene.xml'), tdir, mat_identity(), {})
@@ -349,36 +385,59 @@ def build_track(tid):
     meta['batches'] = write_batches(batcher.batches, blob, mats, tex_dirs, out_dir)
 
     # collision: drop non-solid materials
-    keep_tris, keep_mats = [], []
-    names = {v: k for k, v in coll.mat_ids.items()}
-    for t, mid in zip(coll.tris, coll.mats):
-        m = mats.get(names[mid], {})
-        if m.get('ignore') or m.get('shader') in ('alphablend', 'additive', 'displace', 'grass'):
-            if not m.get('reset'):
-                continue
-        keep_tris.append(t)
-        keep_mats.append(mid)
-    used = sorted(set(keep_mats))
-    remap = {old: new for new, old in enumerate(used)}
-    meta['collision'] = {
-        'n': len(coll.pos), 't': len(keep_tris),
-        'pos': blob.add(struct.pack('<%df' % (len(coll.pos) * 3), *[c for p in coll.pos for c in p])),
-        'idx': blob.add(struct.pack('<%dI' % (len(keep_tris) * 3), *[i for t in keep_tris for i in t])),
-        'mat': blob.add(struct.pack('<%dH' % len(keep_mats), *[remap[m] for m in keep_mats])),
-        'mats': [names[o] for o in used],
-    }
+    def write_coll(cl):
+        keep_tris, keep_mats = [], []
+        names = {v: k for k, v in cl.mat_ids.items()}
+        for t, mid in zip(cl.tris, cl.mats):
+            m = mats.get(names[mid], {})
+            if m.get('ignore') or m.get('shader') in ('alphablend', 'additive', 'displace', 'grass'):
+                # boost pads are see-through decals, but driving over them must still fire
+                if not m.get('reset') and not m.get('zipper'):
+                    continue
+            keep_tris.append(t)
+            keep_mats.append(mid)
+        used = sorted(set(keep_mats))
+        remap = {old: new for new, old in enumerate(used)}
+        return {
+            'n': len(cl.pos), 't': len(keep_tris),
+            'pos': blob.add(struct.pack('<%df' % (len(cl.pos) * 3), *[c for p in cl.pos for c in p])),
+            'idx': blob.add(struct.pack('<%dI' % (len(keep_tris) * 3), *[i for t in keep_tris for i in t])),
+            'mat': blob.add(struct.pack('<%dH' % len(keep_mats), *[remap[m] for m in keep_mats])),
+            'mats': [names[o] for o in used],
+        }
+
+    meta['collision'] = write_coll(coll)
+    # instanced prototypes: baked once in game space; instances carry S*M*S (S mirrors z)
+    meta['protos'] = []
+    all_mats = set(meta['collision']['mats'])
+    for name, pr in protos.items():
+        mats_g = []
+        for mi in pr['inst']:
+            g = list(mi)
+            for r in range(4):
+                for c_ in range(4):
+                    if (r == 2) != (c_ == 2):
+                        g[c_ * 4 + r] = -g[c_ * 4 + r]
+            mats_g += g
+        rec = {'name': name, 'count': len(pr['inst']),
+               'batches': write_batches(pr['b'].batches, blob, mats, tex_dirs, out_dir),
+               'coll': write_coll(pr['c']),
+               'inst': blob.add(struct.pack('<%df' % len(mats_g), *mats_g))}
+        all_mats |= set(rec['coll']['mats'])
+        meta['protos'].append(rec)
     surf = {}
-    for name in meta['collision']['mats']:
+    for name in all_mats:
         m = mats.get(name, {})
         rec = {k: m[k] for k in ('maxSpeed', 'slowdown', 'reset', 'zipper') if k in m}
         if rec:
             surf[name] = rec
     meta['surfaces'] = surf
+    every_batch = meta['batches'] + [b for pr in meta['protos'] for b in pr['batches']]
     meta['materials'] = {b['mat']: {k: v for k, v in mats[b['mat']].items() if k in ('shader', 'noCull', 'noZ')}
-                         for b in meta['batches'] if b.get('mat')}
+                         for b in every_batch if b.get('mat')}
 
     # scene extras
-    scene = ET.parse(os.path.join(tdir, 'scene.xml')).getroot()
+    scene = scene_root
     scroll = {}
     for at in scene.iter('animated-texture'):
         scroll[at.get('name')] = [float(at.get('dx', 0)), float(at.get('dy', 0))]
@@ -410,9 +469,10 @@ def build_track(tid):
                                                                      float(e.get('z'))))])
     meta['items'] = items
 
-    # driveline
+    # driveline (race tracks only)
     quads = []
-    q_root = ET.parse(os.path.join(tdir, 'quads.xml')).getroot()
+    q_path = os.path.join(tdir, 'quads.xml')
+    q_root = ET.parse(q_path).getroot() if os.path.exists(q_path) else ET.Element('quads')
     for q in q_root.iter('quad'):
         pts = []
         for k in ('p0', 'p1', 'p2', 'p3'):
@@ -425,7 +485,8 @@ def build_track(tid):
         quads.append(pts)
     meta['quads'] = [[[round(c, 3) for c in p] for p in q] for q in quads]
     succ = {}
-    g_root = ET.parse(os.path.join(tdir, 'graph.xml')).getroot()
+    g_path = os.path.join(tdir, 'graph.xml')
+    g_root = ET.parse(g_path).getroot() if os.path.exists(g_path) else ET.Element('graph')
     for e in g_root:
         if e.tag in ('edge-loop', 'edge-line'):
             a, b = int(e.get('from')), int(e.get('to'))
@@ -438,6 +499,40 @@ def build_track(tid):
     meta['succ'] = [succ.get(i, []) for i in range(len(quads))]
 
     tx = ET.parse(os.path.join(tdir, 'track.xml')).getroot()
+    yes = lambda v: (v or '').strip().upper() in ('Y', 'YES', 'TRUE', '1')
+    meta['mode'] = 'soccer' if yes(tx.get('soccer')) else 'arena' if yes(tx.get('arena')) else 'race'
+    # fixed start spots (arenas, soccer): heading h in degrees, yaw = -h in game space
+    meta['starts'] = [[round(float(e.get('x')), 2), round(float(e.get('y')), 2), round(-float(e.get('z')), 2),
+                       round(-math.radians(float(e.get('h', 0))), 4)] for e in scene.iter('start')]
+    # cannons: crossing p1-p2 flies the kart along a bezier curve
+    cannons = []
+    for c in scene.iter('cannon'):
+        curve = c.find('curve')
+        pts = []
+        if curve is not None:
+            for pt in curve.iter('point'):
+                pts.append([list(game(vec(pt.get(k)))) for k in ('c', 'h1', 'h2')])
+        cannons.append({'p1': list(game(vec(c.get('p1')))), 'p2': list(game(vec(c.get('p2')))),
+                        'speed': float(curve.get('speed', 25)) if curve is not None else 25.0, 'curve': pts})
+    meta['cannons'] = cannons
+    meta['goals'] = [{'p1': list(game(vec(g.get('p1')))), 'p2': list(game(vec(g.get('p2')))),
+                      'first': yes(g.get('first_goal'))} for g in scene.iter('goal')]
+    nav_path = os.path.join(tdir, 'navmesh.xml')
+    if os.path.exists(nav_path):
+        nroot = ET.parse(nav_path).getroot()
+        verts = [[round(c, 2) for c in game((float(v.get('x')), float(v.get('y')), float(v.get('z'))))]
+                 for v in nroot.iter('vertex')]
+        faces = [[[int(i) for i in f.get('indices').split()], [int(i) for i in (f.get('adjacents') or '').split()]]
+                 for f in nroot.iter('face')]
+        meta['nav'] = {'v': verts, 'f': faces}
+    if ball.get('model') and os.path.exists(ball['model']):
+        bb = Batcher()
+        binfo = read_spm(ball['model'])
+        bb.add_mesh(binfo, mat_identity(), None)
+        box = binfo['bbox']
+        meta['ball'] = {'pos': [round(v, 2) for v in ball['pos']], 'restitution': ball['restitution'],
+                        'radius': round(max(box[3] - box[0], box[4] - box[1], box[5] - box[2]) / 2, 3),
+                        'mesh': write_batches(bb.batches, blob, mats, tex_dirs, out_dir)}
     meta['name'] = tx.get('name')
     meta['laps'] = int(tx.get('default-number-of-laps') or 3)
     music = tx.get('music', '').split()[0] if tx.get('music') else None
@@ -457,9 +552,10 @@ def build_track(tid):
             lic_text += '\n\n# library/%s\n' % os.path.basename(ld) + open(lp, encoding='utf-8', errors='replace').read()
     open(os.path.join(out_dir, 'LICENSES.txt'), 'w').write(lic_text)
     size = pack.write_pack(os.path.join(out_dir, 'pack.png'), meta, blob)
-    tris = sum(b['m'] for b in meta['batches']) // 3
-    print('track', tid, 'objects', stats['objects'], 'batches', len(meta['batches']), 'tris', tris,
-          'coll tris', len(keep_tris), 'pack KB', size // 1024, 'blob KB', blob.size // 1024)
+    tris = sum(b['m'] for b in meta['batches']) // 3 + sum(b['m'] // 3 * pr['count'] for pr in meta['protos'] for b in pr['batches'])
+    splat = sum(1 for b in meta['batches'] if b.get('splat'))
+    print('track', tid, meta['mode'], 'starts', len(meta['starts']), 'cannons', len(cannons), 'splat', splat, 'protos', len(meta['protos']), 'objects', stats['objects'], 'batches', len(meta['batches']), 'tris', tris,
+          'coll tris', meta['collision']['t'], 'pack KB', size // 1024, 'blob KB', blob.size // 1024)
 
 
 def music_file(music_name):

@@ -1,0 +1,218 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Candela city for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/gfx_fireworkExplosion_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Firework Explosion Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+Comment:
+ Some doubt as to copyright year; may have been from a year earlier since the SVN comment
+ implied that it had not been immediately committed to the repo upon creation.
+
+
+# library/gfx_fireworkTube_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Firework Tube Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/gfx_meteorit_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Meteorite Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_airConditioner_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Air Conditioner Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_armchair_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Armchair Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_blueNeonArrow_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Blue neon arrow sign for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files: *
+Copyright: Copyright 2018 Benau
+License: Public domain
+
+
+# library/stklib_kikiPainter_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Kiki with painting animation library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+Comment: Kiki mascot is designed by Tyson Tan.
+
+
+# library/stklib_easel_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Easel for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: Public domain
+
+
+
+# library/stklib_kiki_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Kiki library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+ kiki_brush.png
+ kiki_brush-gloss.png
+ scripting.as
+Copyright:
+ Copyright 2020 Typhon306
+ Copyright 2020 McRavenINDo
+License: CC-BY-SA 3.0
+Comment: Kiki mascot is designed by Tyson Tan.
+
+
+# library/stklib_redNeonArrow_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Red neon arrow sign for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files: *
+Copyright: Copyright 2018 Benau
+License: Public domain
+
+
+# library/stklib_silvianFence_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Silvian fence for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2018 Jean-Manuel Clémençon for SuperTuxKart team (3D objects and textures)
+License: CC-BY-SA 4.0
+Comment: From Candela city track
+
+
+# library/stklib_silvianKiosk_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_silvianTower_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Silvian tower for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2018 Jean-Manuel Clémençon for SuperTuxKart team (3D objects and textures)
+License: CC-BY-SA 4.0
+Comment: From Candela city track
+
+
+# library/stklib_wilberPainter_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Wilber with painting animation library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
+
+# library/stklib_wilbertSecurity_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Wilber library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2016 "GeekPenguinBR" and "TuxKartDriver" 
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
+Files:
+ scripting.as
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+

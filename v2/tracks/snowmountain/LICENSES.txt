@@ -1,0 +1,21 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Snow Mountain
+Upstream-Contact: Canis Lupus
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *.spm
+Copyright: Canis Lupus
+License: GPL and CC-BY-SA
+
+
+# library/stklib_redXmasLight_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: xmas light (props for tracks)
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0

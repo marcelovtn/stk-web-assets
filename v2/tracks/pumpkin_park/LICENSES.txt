@@ -1,0 +1,138 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Pumpkin Park for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2017 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_autumnSmallBush_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Small Autumnal Bush Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_autumnTree_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumnal Tree Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztekTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_carousel_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: based on https://www.blendswap.com/blends/view/67208 modified by Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_kiki_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Kiki library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+ kiki_brush.png
+ kiki_brush-gloss.png
+ scripting.as
+Copyright:
+ Copyright 2020 Typhon306
+ Copyright 2020 McRavenINDo
+License: CC-BY-SA 3.0
+Comment: Kiki mascot is designed by Tyson Tan.
+
+
+# library/stklib_konqi_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Konqi library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
+
+# library/stklib_ferryWheels_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Ferry wheel (landscape) for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_industrialLamp_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Indurstial lamp for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_jackOLantern_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_silvianKiosk_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Jean-Manuel Clémençon
+License: CC-BY-SA 4.0

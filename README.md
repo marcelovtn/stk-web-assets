@@ -12,15 +12,22 @@ from the upstream asset that names the authors and the license of every file.
 Anything you make from these files keeps those licenses and needs the same
 credit.
 
+## Where to load them from
+
+Everything lives under `v2/` and is served by GitHub Pages at
+`https://marcelovtn.github.io/stk-web-assets/v2/` (CORS open, real content types).
+The older `v1` set stays reachable through the `v1` tag
+(`https://cdn.jsdelivr.net/gh/marcelovtn/stk-web-assets@v1/`).
+
 ## What is here
 
 | Folder | Contents |
 | --- | --- |
-| `tracks/<id>/` | `pack.png` (meshes, collision, driveline and scene data, see below), the textures, a screenshot |
-| `karts/<id>/` | `pack.png` (body and wheels), textures, icon and shadow |
-| `items/` | `pack.png` with gift box, banana, nitro, bowling ball, cake, gum, plunger, swatter, parachute and rubber ball |
-| `icons/` | HUD and powerup icons from `stk-code/data/gui/icons` |
-| `music/`, `sfx/` | Ogg Vorbis files, unchanged |
+| `v2/tracks/<id>/` | 21 race tracks, 9 battle arenas, 6 soccer fields: `pack.png` (meshes, instanced props, collision, driveline or navmesh, start spots, cannons, goals), the textures, a screenshot |
+| `v2/karts/<id>/` | all 18 karts: `pack.png` (body and wheels), textures, icon and shadow |
+| `v2/items/` | `pack.png` with gift box, banana, nitro, bowling ball, cake, gum, plunger, swatter, parachute and rubber ball |
+| `v2/icons/` | HUD and powerup icons from `stk-code/data/gui/icons` |
+| `v2/music/`, `v2/sfx/` | Ogg Vorbis files, unchanged |
 
 Source: the `stk-assets-lq.zip` of the SuperTuxKart 1.5 asset release
 (`supertuxkart/stk-assets-mobile`) and `stk-code` 1.5 for the icons.

@@ -1,0 +1,100 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Volcan Island for SuperTuxKart
+Upstream-Contact: Fabio Ponzi
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016 Fabio Ponzi
+License: CC-BY-SA 4.0
+
+
+# library/stklib_accacia_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Accacia Plant Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_agave_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Agave Plant Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_animGrass_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Animated Grass Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_asianLantern_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Asian Lantern Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: node.xml
+Copyright: Copyright 2014, 2017 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+Files: stklib_asianLantern_a_main.b3d
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztecHut_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Hut Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2014 Anon
+ Copyright 2014 Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 4.0
+Comment: Fringe and stuff added by samuncle
+
+
+# library/stklib_bambooTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bamboo Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_ReedBoat_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0

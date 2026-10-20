@@ -1,0 +1,746 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Black Forest Track for SuperTuxKart
+Upstream-Contact: Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files:
+ antlers_*.spm
+ deer-antlers.jpg
+Copyright: Released Public Domain by CDmir
+License: CC0
+
+Files:
+ bed.spm
+ bench_lod_?.spm
+ black_forest_track.spm
+ book_a.spm
+ books_a.spm
+ bookshelf_?.spm
+ branch_b.spm
+ branch.spm
+ brick.spm
+ bridge_fence_?.spm
+ chair_a.spm
+ corn_field.spm
+ desk_a.spm
+ door_*.spm
+ ekasia_tree_*.spm 
+ fence_*.spm
+ fir_tree_a.spm
+ Flower_3.spm
+ flower_grass_?.spm
+ flowers_grass_c.spm
+ graden_stones_?.spm
+ grain_field.spm
+ grass*.spm
+ greenLight.spm
+ hat_a_*.spm
+ house_*.spm
+ invisible*.spm
+ liana*.spm
+ log_*.spm
+ lowpoly_trees_*.spm
+ monestary_*.spm
+ monestery_*.spm
+ painting_a.spm
+ pencil_b.spm
+ rail_road_barrier.spm
+ rail_static.spm
+ railCrossingGate.spm
+ railroad_crossing*.spm
+ railway_stones.spm
+ red_light.spm
+ reverseRamp*.spm
+ river_stones_?.spm
+ road_sign_01.spm
+ schiene_b.spm
+ scripting.as
+ small_clouds_?.spm
+ small_table_?.spm
+ stair_board.spm
+ stairs_*.spm
+ start_flag*.spm
+ stklib_steamengine.spm
+ stone*.spm
+ stump_01.spm
+ teller.spm
+ topf.spm
+ track*.spm
+ train*.spm
+ water*.spm
+ WATER_ref.spm 
+ wood*.spm
+ arrows_*.spm
+ *.xml
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ The original (unformatted) license file said "other models and textures by Jammyjamjamman released under
+ CC BY-SA 3.0." However, I could not attribute these models to Jammyjamjamman so I assume Sven made them
+ himself.
+
+Files: 
+ birch_tree.png
+ dirt_alpha.png
+ ekasia_tree.png
+ fir_tree.png
+ fir_bark_nm.png
+ forest_startFlag.jpg
+ forest_trees.jpg
+ forest_trees_nm.jpg
+ invisible.png
+ invisible_slow.png
+ reset.png
+ slight_slowdown.png
+ sign.png
+ sshot.jpg
+ tree_b.png
+ tree_c.png
+ tree_d.png
+ trees_leaves.png
+ water_stones_glossy.jpg 
+ water_stones_nm.jpg
+ willow_tree.png
+ window.png
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+Files: 
+ BlackEyedSusan.png
+ Flower3.png
+ Flower3F.png
+ Flower5.png
+ Flower5F.png
+ Woodpile.jpg
+ Woodpile_nm.jpg
+Copyright: Copyright ???? Dim
+License: CC-BY-SA 3.0
+
+Files:
+ blackTowel.jpg
+ ekasia.png
+ redTowel.jpg
+ whiteTowel.jpg
+Copyright:
+ Copyright ???? Keith333
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY 3.0
+
+Files:
+ brick_wall_06.jpg
+ brick_wall_06_nm.jpg
+Copyright: Copyright ???? Duion
+License: CC-BY-SA 3.0
+
+Files: bush*
+Copyright: Copyright ???? OliverMH
+License: CC-BY 3.0
+
+Files:
+ cow.jpg
+ cow.spm
+Copyright: Copyright 2010 Marianne Gagnon
+License: CC-BY-SA 3.0
+
+Files: 
+ dark-wall-wood.png
+ dark-wall-wood_nm.jpg
+ metal_rusted.jpg
+Copyright:
+ Copyright ???? Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 3.0
+Comment: From Mines track.
+
+Files:
+ door.jpg
+ door_glossy.jpg
+ door_nm.jpg
+Copyright:
+ Copyright ???? Para
+ Copyright 2018 Sven Andreas Belting
+License: CC0
+
+Files:
+ fir_bark.png
+ fir_branch.png
+Copyright:
+ Copyright ???? Christian "Duion" Femmer
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY 3.0
+Comment: Duion is/was a user on FreeGameDev forums.
+
+Files:
+ forest_floor.jpg
+ forest_floor_nm.jpg
+Copyright:
+ Copyright ???? Yinan Chen
+ Copyright 2018 Sven Andreas Belting
+License: CC0
+
+Files:
+ grass-border.png
+Copyright:
+ Copyright ???? Christoph Egger
+ Copyright ???? Auria
+ Copyright ???? MiniBjorn
+License: CC BY-SA 3.0
+
+Files:
+ grass_forestFloor_big.jpg
+ grass_forestFloor_big_nm.jpg
+ road_forestFloor.jpg
+ road_forestFloor_nm.jpg
+ road_forestFloor_full.jpg
+ road_forestFloor_full_nm.jpg
+ road_forestFloor_overlaping.jpg
+ road_forestFloor_overlaping_nm.jpg
+Copyright:
+ Copyright ???? Christoph Egger
+ Copyright ???? Auria
+ Copyright ???? MiniBjorn
+ Copyright ???? Yinan Chen
+License: CC BY-SA 3.0
+
+Files:
+ half-timbered_house.jpg
+ half-timbered_house_glossy.jpg
+ half-timbered_house_nm.jpg
+Copyright:
+ Copyright ???? ctdabomb
+ Copyright ???? Canis Lupus
+License: CC BY-SA 3.0
+
+Files: mossy_stone_?.jpg
+Copyright:
+ Copyright ???? Thomas Oppl
+ Copyright ???? Bart
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+Files: 
+ painting1.jpg
+ painting1_glossy.jpg
+ painting1_nm.jpg
+ Painting2.jpg
+ Painting2_glossy.jpg
+ Painting2_nm.jpg
+Copyright:
+ Copyright ???? Piotrus
+ Copyright ???? Dragoljub Stanojev
+ Copyright ???? Marianne Gagnon
+License: CC-BY-SA 3.0
+
+Files: road_close?.spm
+Copyright:
+ Copyright 2016 Fabio Ponzi <ponzifabio@gmail.com>
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+Comment: From Volcan Island track
+
+Files:
+ road_grass_dirt.png
+ road_grass_dirt_nm.jpg
+ road_grass_wood.jpg
+ road_grass_wood_nm.jpg
+Copyright:
+ Copyright ???? Christoph Egger
+ Copyright ???? Auria
+ Copyright ???? MiniBjorn
+License: CC BY-SA 3.0
+
+Files:
+ roadtoground.png
+ roadtoground_nm.jpg
+Copyright:
+ Copyright ???? Christoph Egger
+ Copyright ???? Auria
+ Copyright ???? MiniBjorn
+ Copyright ???? BurningWell
+License: CC BY-SA 3.0
+
+Files: road_sign.jpg
+Copyright:
+ Copyright 2015 Jean-Manuel "samuncle" Clémençon
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+
+Files: rock_gray.jpg
+Copyright: Copyright 2012 Wolfs
+License: CC0 1.0
+Comment:
+ Modification by Wolfs of a picture by jean-manuel clemençon (SamUncle)
+ which is based on an image from BurningWell and has been released to public domain
+
+Files: 
+ roof_2.png
+ roof_2_glossy.png
+ roof_2_nm.png
+Copyright:
+ Copyright ???? Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 3.0
+Comment: 
+ based on http://www.publicdomainpictures.net/ and http://www.burningwell.org/ 
+ public domain images
+
+Files: roof_3.jpg
+Copyright: Public Domain ???? by ????
+License: CC0
+Comment: Source no longer available but cited as http://tellim.com/texture_cd/texture/building/roof/roof04.jpg
+
+Files:
+ s1.jpg
+ s3.png
+Copyright:
+ Copyright ???? Fabio Ponzi (aka Ponzino)
+License: CC BY-SA 3.0
+
+Files:
+ stktex_generic_WoodA._unlit.jpg
+Copyright: Copyright 2014 Jean-Manuel "samuncle" Clémençon
+License: CC-BY-SA 4.0
+
+Files:
+ logBarrier*.spm
+ stklib_animGrass_a_main*.spm
+ stklib_logBarrier.spm
+ stklib_oldschoolLamp_a_main.spm
+Copyright:
+ Copyright 2014 Jean-Manuel "samuncle" Clémençon
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: These files are simply the original library node with minor modifications
+
+Files: stklib_steamLocomotive_a.png
+Copyright:
+ Released public-domain by yughes
+ Released public-domain by Sven Andreas Belting
+License: CC0
+
+Files:
+ stk_generic_stkBook_a.jpg
+ stktex_churchRosetteGlass_b.png
+Copyright:
+ Copyright ???? Jean-Manuel "samuncle" Clémençon
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ These are based on STK textures which were probably made by samuncle.
+ I don't have time to look it up now.
+
+Files: stktex_jungleVines_a.png
+Copyright: Copyright 2015 Anon
+License: CC-BY-SA 4.0
+
+Files: 
+ stop_sign.png
+ stop_sign_nm.png
+Copyright:
+ Copyright ???? Jean-Manuel "samuncle" Clémençon
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+Comment: From Mines track.
+
+Files: 
+ trees_log_mossy.png
+ trees_bark_001_col.jpg
+Copyright:
+ Copyright ???? Blender Foundation
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+Files: 
+ tree_stumps.jpg
+Copyright:
+ Copyright ???? Blender Foundation
+License: CC-BY-SA 3.0
+
+Files: 
+ water_dtones.jpg
+Copyright:
+ Copyright ???? Jean-Manuel "samuncle" Clémençon
+ Copyright ???? Marianne Gagnon
+ Copyright ???? Bruningwell
+License: CC-BY-SA 3.0
+
+Files: 
+ water_grass.jpg
+Copyright:
+ Copyright ???? Christoph Egger
+ Copyright ???? Marianne Gagnon
+ Copyright ???? MiniBjorn
+ Copyright ???? fraang
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+Files: steamLocomotive.ogg
+Copyright: Copyright ???? Daniel Simion
+License: CC-BY-SA 3.0
+
+Files: cow.ogg
+Copyright: 
+ Copyright ???? Secretlondon
+ Copyright ???? Buffbill84
+License: CC-BY-SA 3.0
+
+
+# library/stk_combineHarvester_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Combine Harvester Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016, 2017 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_armchair_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Armchair Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_autumnBirch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Birch Tree model for SuperTuxKart
+Upstream-Contact: Marianne Gagnon <auria.mg@gmail.com>
+Source: https://forum.freegamedev.net/viewtopic.php?f=18&t=7739
+License: CC-BY-SA 4.0
+
+Files:
+ *.spm
+ *.xml
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+
+Files:
+ birch_a.png
+ birch_b.png
+ birch_nm.jpg
+Copyright:
+ Copyright ???? Jammyjamjamman
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+Files: birch_tree.png
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Appears to be a rendering of the high-poly model
+
+
+# library/stklib_autumnTree_b
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files: *
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ tree_b appears to be a simple rendering of the model, which is itself constructed entirely
+ with textures already part of SuperTuxKart.
+
+
+# library/stklib_autumnTree_c
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ *.xml
+ *.spm
+ tree_c.png
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ tree_c appears to be a simple rendering of the model, which is itself constructed entirely
+ with textures already part of SuperTuxKart.
+
+Files: leaf_a.png
+Copyright: Published Public Domain by Sebastian "rubberduck" Platen (year unknown)
+License: CC0
+
+
+# library/stklib_autumnTree_d
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files: *
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ tree_d.png appears to be a simple rendering of the model, which is itself constructed entirely
+ with textures already part of SuperTuxKart. This would technically make it a derivative work!
+
+
+# library/stklib_autumnTree_e
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ *.xml
+ *.spm
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ I don't actually know whether Sven is the author of this model. For one thing, it
+ contains Blender materials (a sign that it was imported from e.g. BlendSwap) and
+ it didn't originally follow the naming conventions of the Black Forest track I pulled
+ it from. "Jammyjamjamman" might deserve credit here.
+
+
+# library/stklib_autumnTree_f
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree model for SuperTuxKart
+Upstream-Contact: Marianne Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files:
+ *.xml
+ *.spm
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ This might actually be one of the models created by Lamoot---I'm not sure---in which
+ case it would have been originally licensed CC-BY 3.0. It probably wasn't created
+ specifically for STK because the model has Blender materials.
+
+
+# library/stklib_autumnTree_g
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Tree model for SuperTuxKart
+Upstream-Contact: Marianne Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files:
+ *.xml
+ *.spm
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ This might actually be one of the models created by Lamoot---I'm not sure---in which
+ case it would have been originally licensed CC-BY 3.0. It probably wasn't created
+ specifically for STK because the model has Blender materials.
+
+
+# library/stklib_autumnWillow_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Autumn Willow Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ *.xml
+ *.spm
+ willow_b_nm.jpg
+Copyright:
+ Copyright ???? titiger
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment:
+ The high-poly model was created by titiger (from MegaGlest birch_forest/models). The low-poly model is simply textured with with a rendering.
+
+Files:
+ willow_a.png
+ willow_b.png
+Copyright: Copyright ???? titiger
+License: CC-BY-SA 3.0
+
+Files: willow_tree.png
+Copyright:
+ Copyright ???? titiger
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Derivative work (rendering) combining the textures and the model (used for the low-poly LOD version)
+
+
+# library/stklib_bambooTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bamboo Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_bird_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bird model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Source: https://forum.freegamedev.net/viewtopic.php?f=90&t=8199
+
+
+# library/stklib_deadBranch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Dead Branch model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY 3.0
+
+Files: trees_bark_001_col.jpg
+Copyright:
+ Copyright 2008 Blender Foundation
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY 3.0
+Comment: Sources: apricot.blender.org and https://www.outworldz.com/yofrankie/Parts/trees/
+
+Files:
+ *.xml
+ *.spm
+Copyright:
+ Copyright ???? Lamoot
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY 3.0
+
+
+# library/stklib_old_house_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Old House model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ *.spm
+ *.xml
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Source: https://forum.freegamedev.net/viewtopic.php?f=90&t=8199
+
+Files: dark-wall-wood.png
+Copyright:
+ 2008-2010 Ivar ten Cate <varivar@live.nl>
+ 2018 Sven Andreas Belting
+License: CC-BY-SA-3.0
+Comment: From Old Mine track, colors adjusted/improved by Sven Andreas Belting
+
+Files:
+ door.jpg
+ door_glossy.jpg
+ door_nm.jpg
+Copyright:
+ Published Public Domain ???? by Para
+ Published Public Domain 2018 by Sven Andreas Belting
+License: CC0
+Comment: Source: https://www.outworldz.com/cgi/free-seamless-textures.plx?c=Doors%20gates ?
+
+Files: roof_3.jpg
+Copyright: Public Domain ???? by ????
+License: CC0
+Comment: Source no longer available but cited as http://tellim.com/texture_cd/texture/building/roof/roof04.jpg
+
+Files:
+ roof_3_glossy.jpg
+ roof_3_nm.jpg
+Copyright:
+ Public Domain ???? by ????
+ Copyright 2018 by Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Source no longer available but cited as http://tellim.com/texture_cd/texture/building/roof/roof04.jpg
+
+Files:
+ stktex_generic_WoodA.png
+Copyright:
+ Copyright 2014 Jean-Manuel "samuncle" Clémençon <sam.un@protonmail.com>
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Slight modification of the original generic texture which samuncle made for STK.
+
+Files: stktex_generic_WoodA_nm.jpg
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+Comment: Apparently this was made independently of the original texture that it modifies.
+
+
+# library/stklib_pinetree_b
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Pine Tree B model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ fir_bark.png
+ fir_branch.png
+Copyright:
+ Copyright Christian "Duion" Femmer
+ Copyright 2018 Sven Andreas Belting
+License: CC-BY 3.0
+Comment: Duion is/was a user on FreeGameDev forums.
+
+Files:
+ fir_tree.png
+ fir_bark_nm.png
+ *.xml
+ *.spm
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 3.0
+
+
+# library/stklib_treeStump_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Tree Stump Model for SuperTuxKart
+Upstream-Contact:
+ Sven Andreas Belting: https://forum.freegamedev.net/memberlist.php?mode=viewprofile&u=5237
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0 
+
+Files:
+ *.xml
+ *.spm
+Copyright: Copyright 2018 Sven Andreas Belting
+License: CC-BY-SA 4.0
+
+Files: tree_stumps.jpg
+Copyright: Copyright ???? Blender Foundation
+License: CC-BY 3.0
+Comment: From YoFrankie! (apricot.blender.org)

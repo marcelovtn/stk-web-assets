@@ -1,0 +1,27 @@
+Format: https://debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Lighthouse Track for SuperTuxKart
+Upstream-Contact:
+ Jean-Manuel "samuncle" Clémençon <sam.un@protonmail.com>
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *.xml
+Copyright:
+ Copyright 2012~2015 Jean-Manuel Clémençon
+ Copyright 2017 Matthew Trescott <matthewtrescott@gmail.com>
+License: CC-BY-SA 4.0
+
+
+# library/stklib_logBarrierEndPost_a
+Format: https://debian.org/doc/packaging-manual/copyright-format/1.0/
+Upstream-Name: Log fence endpost object for SuperTuxKart
+Upstream-Contact:
+ Matthew "MTres19" Trescott <matthewtrescott@gmail.com>
+ Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2017 Matthew Trescott
+License: CC-BY-SA 4.0

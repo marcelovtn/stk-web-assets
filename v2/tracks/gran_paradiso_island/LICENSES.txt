@@ -1,0 +1,172 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Gran Paradiso Island for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_accacia_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Accacia Plant Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_agave_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Agave Plant Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/gfx_jetblastGround_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Jetblast Sandstorm Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: node.xml
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_armchair_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Armchair Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztekGirlCheering_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Aztec Girl Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files:
+ stktex_aztekGirlBody_a.png
+ stktex_aztekGirlFace_a.png
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+Files: *.spm *.xml
+Copyright:
+ Copyright 2014 Dhanraj "drex" Acharya <dhanrajacharya44@gmail.com | drex4.deviantart.com>
+License: CC-BY-SA 4.0
+
+
+# library/stklib_aztekVase_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: node.xml
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+Files: stklib_aztekVace_a_main.b3d
+Copyright: Copyright 2014 Anon
+License: CC-BY-SA 4.0 CC-BY-SA 3.0 Unported
+Comment: From https://forum.freegamedev.net/viewtopic.php?f=90&t=5726
+
+
+# library/stklib_bambooTorch_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Bamboo Torch Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014, 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_beachBarMenu_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Beach Bar Menu Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2015 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_beachGuy_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Beach Guy Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *.spm *.xml
+Copyright:
+ Copyright 2015 Dhanraj "drex" Acharya <dhanrajacharya44@gmail.com | drex4.deviantart.com>
+ Copyright 2015 Jean-Manuel Clémençon
+ Copyright 2017 Benau <benaustk@users.sf.net>
+License: CC-BY-SA 4.0
+Comment: Original modeling done by drex. Hair and texture by samuncle. Animation by Benau (animation work in public-domain).
+
+Files: stktex_beachGuySwimshort_a_mask.png
+Copyright:
+ Copyright 2015 Jean-Manual Clémençon
+ Copyright 2017 Benau <benaustk@users.sf.net>
+License: CC-BY-SA 4.0
+
+Files: stktex_beachGuySwimshort_a.png
+Copyright: Copyright 2015 Jean-Manual Clémençon
+License: CC-BY-SA 4.0
+
+
+
+# library/stklib_beachWomen_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: character for tracks
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2016 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_monkeyCheering_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Animated Monkey model for SuperTuxKart
+Upstream-Contact: Marianne "Auria" Gagnon <auria.mg@gmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright:
+ Copyright 2014, 2015 Jean-Manuel "samuncle" Clémençon <sam.un@protonmail.com>
+ Copyright 2017 Benau
+ Copyright 2019 theTomasPat
+License: CC-BY-SA 4.0
+Comment: Original model by samuncle. Benau and theTomasPat added new animations.

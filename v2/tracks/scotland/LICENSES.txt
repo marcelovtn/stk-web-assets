@@ -1,0 +1,96 @@
+
+
+# library/stklib_kikiPainter_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Kiki with painting animation library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+Comment: Kiki mascot is designed by Tyson Tan.
+
+
+# library/stklib_easel_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Easel for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: Public domain
+
+
+
+# library/stklib_kiki_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Kiki library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+ kiki_brush.png
+ kiki_brush-gloss.png
+ scripting.as
+Copyright:
+ Copyright 2020 Typhon306
+ Copyright 2020 McRavenINDo
+License: CC-BY-SA 3.0
+Comment: Kiki mascot is designed by Tyson Tan.
+
+
+# library/stklib_wilberPainter_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Wilber with painting animation library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
+
+# library/stklib_armchair_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Armchair Object for SuperTuxKart
+Upstream-Contact: Jean-Manual "samuncle" Clémençon <sam.un@protonmail.com>
+Source: https://supertuxkart.net
+License: CC-BY-SA 4.0
+
+Files: *
+Copyright: Copyright 2014 Jean-Manuel Clémençon
+License: CC-BY-SA 4.0
+
+
+# library/stklib_wilbertSecurity_a
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Wilber library for SuperTuxKart
+Upstream-Contact: Benau
+Source: https://supertuxkart.net
+
+Files:
+ *.spm
+ *.xml
+Copyright:
+ Copyright 2016 "GeekPenguinBR" and "TuxKartDriver" 
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
+Files:
+ scripting.as
+ Copyright 2017 Benau
+License: CC-BY-SA 3.0
+
